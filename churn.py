@@ -17,7 +17,7 @@ st.title("📉 Customer Churn Prediction Web App")
 # Load and process data
 @st.cache_data
 def load_data():
-    url = 'https://raw.githubusercontent.com/omsahugit/company_churn/refs/heads/master/customer_churn%20(1).csv'
+    url = 'https://raw.githubusercontent.com/nimkhedkarshreyas/customer-churn/main/customer_churn.csv'
     df = pd.read_csv(url)
     df['Onboard_date'] = pd.to_datetime(df['Onboard_date'])
     df['Onboard_timestamp'] = df['Onboard_date'].astype('int64') // 10**9
