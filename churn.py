@@ -15,7 +15,6 @@ st.set_page_config(page_title="Customer Churn Predictor", layout="centered")
 st.title("📉 Customer Churn Prediction Web App")
 
 # Load and process data
-@st.cache_data
 def load_data():
     url = 'https://raw.githubusercontent.com/nimkhedkarshreyas/customer-churn/main/customer_churn.csv'
     df = pd.read_csv(url)
